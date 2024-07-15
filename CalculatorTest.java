@@ -19,7 +19,7 @@ public class CalculatorTest{
 
 		Calculator calculator = new Calculator();
 
-		String number = 12345;
+		int number = 12345;
 		int reversedNumber = calculator.reverseNumber(number);
 
 		assertEquals(54321, reversedNumber);

@@ -10,7 +10,7 @@ public class Calculator{
 		return factorial;
 	}
 
-	public i reverseNumber(int number){
+	public int reverseNumber(int number){
 	
 		int digit1 = number % 10;
 		number = number / 10;
