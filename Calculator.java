@@ -11,22 +11,21 @@ public class Calculator{
 	}
 
 	public int reverseNumber(int number){
-	
-		int digit1 = number % 10;
-		number = number / 10;
+		int reversed = 0;
+        	while (number != 0) {
+           		 int digit = number % 10;
+            		reversed = reversed * 10 + digit;
+           		 number /= 10;
+       		 }
+        	return reversed;
+	}
 
-		int digit2 = number % 10;
-		number = number / 10;
-
-		int digit3 = number % 10;
-		number = number / 10;
-
-		int digit4 = number % 10;
-		number = number / 10;
-
-		int digit5 = number % 10;
-
-		return (digit1, digit2, digit3, digit4, digit5);
+	public static int findExponential(int base, int exponent) {
+        	int result = 1;
+        	for (int index = 0; index < exponent; index++) {
+            	result *= base;
+        	}
+        	return result;
 	}
 	
 }
