@@ -30,11 +30,11 @@ public class CalculatorTest{
 
 		Calculator calculator = new Calculator();
 
-		int number1 = 2;
-		int number2 = 3;
-		int exponent = calculator.findExponential(number1, number2);
+		int number1 = -2;
+		int number2 = 0;
+		double exponent = calculator.findExponential(number1, number2);
 
-		assertEquals(8, exponent);
+		assertEquals(1, exponent);
 	}
 
 
